@@ -1,2 +1,2 @@
 #!/bin/bash
-sort | cut --delimiter=' ' -f 1 | uniq -c | sort -r | tr -s ' ' | cut -d ' ' -f 3
+echo "hi"
