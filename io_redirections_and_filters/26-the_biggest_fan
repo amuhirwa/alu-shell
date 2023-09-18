@@ -1,2 +1,2 @@
 #!/bin/bash
-sort | tr -s ' ' | cut --delimiter=' ' -f 1 | uniq -c 
+sort | tr -s ' ' | cut -d ' ' -f 1 | uniq -c 
