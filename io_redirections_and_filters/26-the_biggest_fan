@@ -1,2 +1,2 @@
 #!/bin/bash
-sort | cut -f 1 | uniq -c | sort -nr | tr -s ' ' | cut -d ' ' -f 3 | head -11 | tr -d host
+sort | cut -f 1 | uniq -c | sort -nr | tr -s ' ' | cut -d ' ' -f 3 | head -11 | sed 's/host//'
