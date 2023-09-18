@@ -1,2 +1,2 @@
 #!/bin/bash
-sort | tr -d '[:blank:]'
+sort | cut -f 1 | uniq -c | sort -r | tr -s ' ' | cut -d ' ' -f 3
