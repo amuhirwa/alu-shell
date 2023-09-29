@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Prints its own pid
+pidof -x 0-what-is-my-pid
