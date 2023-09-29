@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 # Print list of processes
-top -n 1 | tail +7
+ps -ef --forest
