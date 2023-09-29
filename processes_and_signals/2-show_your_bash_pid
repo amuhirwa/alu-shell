@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Print list of processes
+# shellcheck disable=SC2009
+ps axu -C *bash* --forest
