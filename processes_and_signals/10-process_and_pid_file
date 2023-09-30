@@ -5,8 +5,7 @@ while :
 do
     echo "To infinity and beyond"
     sleep 2
-    trap 'echo "I hate the kill command"' 15
     trap 'echo "Y U no love me?!"' SIGINT
 done
-trap 'rm /var/run/myscript.pid; exit' SIGTERM
+trap 'echo "I hate the kill command"; rm /var/run/myscript.pid; exit' SIGTERM
 trap 'rm /var/run/myscript.pid; exit' SIGQUIT
