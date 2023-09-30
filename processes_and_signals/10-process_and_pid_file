@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Script that creates and deletes files and shows output according to signal
+echo $$ > /var/run/myscript.pid
+while :
+do
+    echo "To infinity and beyond"
+    sleep 2
+    trap 'echo "I hate the kill command"' 15
+    trap 'echo "Y U no love me?!"' SIGINT
+done
+trap 'rm /var/run/myscript.pid; exit' SIGTERM SIGQUIT
