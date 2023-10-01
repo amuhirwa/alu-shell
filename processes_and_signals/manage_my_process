@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Write i am alive indefinitely to /tmp/process
+while :
+do 
+	echo "I am alive!" > /tmp/my_process
+	sleep
+done
