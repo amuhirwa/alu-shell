@@ -3,5 +3,5 @@
 while :
 do 
 	echo "I am alive!" > /tmp/my_process
-	sleep
+	sleep 2
 done
