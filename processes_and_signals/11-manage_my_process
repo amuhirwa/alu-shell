@@ -5,9 +5,9 @@ case "$1" in
 		pgrep -f manage_my_process > /var/run/my_process.pid
 		echo "manage_my_process started"
 		;;
-	"stop") pkill -f ./manage_my_process
-		sudo rm /var/run/my_process.pid
-		echo "manage_my_process stopped"
+	"stop") pkill -f "./manage_my_process"                 
+    		rm /var/run/my_process.pid                     
+    		echo "manage_my_process stopped"   
 		;;
 	"restart") pkill -f ./manage_my_process
                    sudo rm /var/run/my_process.pid
